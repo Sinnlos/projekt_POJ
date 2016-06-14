@@ -1,0 +1,57 @@
+import javax.swing.*;
+
+import java.awt.BorderLayout;
+import java.awt.event.*;
+
+public class prostyGui implements ActionListener {
+
+	private static final AbstractButton przycisk = null;
+
+	public static void main(String[] args){
+		
+		prostyGui apGui = new prostyGui();
+		apGui.start();
+		
+	}
+
+	
+	
+	public void start(){
+		JFrame ramka = new JFrame();
+		JButton przycisk = new JButton("Zatwierdź");	
+		JCheckBox kratka1 = new JCheckBox("Człowiek");
+		JCheckBox kratka2 = new JCheckBox("Elf");
+		JComboBox<String> rasaCombo = new JComboBox();
+		
+		
+		
+		ramka.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		ramka.getContentPane().setLayout(new BorderLayout());
+		//ramka.getContentPane().add(przycisk, BorderLayout.NORTH);
+		// ramka.getContentPane().add(new JButton("KKK"), BorderLayout.EAST);
+		//ramka.getContentPane().add(kratka1, BorderLayout.WEST);
+		//ramka.getContentPane().add(kratka2, BorderLayout.WEST);
+		
+		rasaCombo.setBounds(400, 40, 10, 20);
+		rasaCombo.addItem("Człowiek");
+		rasaCombo.addItem("Elf");
+		rasaCombo.addItem("Krasnolud");
+		rasaCombo.addItem("Łotrzyk");
+		
+		przycisk.addActionListener(this);
+		
+		ramka.setSize(600,300);
+		ramka.setVisible(true);
+	}
+
+	public void actionPerformed(ActionEvent zdarzenie){
+		
+		przycisk.setText("Dokonałeś wyboru");
+	}
+	
+	public void actionPerformed1(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
