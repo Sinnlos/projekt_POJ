@@ -1,17 +1,17 @@
 package przebudzenie;
 
-public class lotrzyk extends postac{
-	
-public lotrzyk(){
-		
-		description = "Łotrzyk ";
-		
-		}
+public class Lotrzyk extends Postac{
+    
+public Lotrzyk(){
+        
+        description = "Łotrzyk ";
+        
+        }
 
 
-	public String opis(){
-	
-		return " posiada dwie specjalne umiejętnosci: latanie oraz wrażliwość na obrażenia";
+    public String opis(){
+    
+        return " latanie, wrażliwość na obrażenia";
 }
 
 
