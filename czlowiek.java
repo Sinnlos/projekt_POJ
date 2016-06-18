@@ -1,18 +1,18 @@
 package przebudzenie;
 
-public class czlowiek extends postac {
-	
-	public czlowiek(){
-		
-	description = "Człowiek ";
-	
-	}
-	
-	public String opis(){
-		
-		return "nie posiada specjalnych umiejętnosci";
-	
-	}
-	
+public class Czlowiek extends Postac {
+    
+    public Czlowiek(){
+        
+    description = "Człowiek ";
+    
+    }
+    
+    public String opis(){
+        
+        return "";
+    
+    }
+    
 
 }
