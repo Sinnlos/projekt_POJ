@@ -1,9 +1,9 @@
 package przebudzenie;
 
-public abstract class profesja extends postac {
-	
-	public abstract String getDescription();
+public abstract class Profesja extends Postac {
+    
+    public abstract String getDescription();
 
-	public abstract String opis();
-	
+    public abstract String opis();
+    
 }
