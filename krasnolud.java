@@ -1,17 +1,17 @@
 package przebudzenie;
 
-public class krasnolud extends postac {
-	
-public krasnolud(){
-		
-		description = "Krasnolud ";
-		
-		}
-	
+public class Krasnolud extends Postac {
+    
+public Krasnolud(){
+        
+        description = "Krasnolud ";
+        
+        }
+    
 
-	public String opis(){
-	
-		return " posiada dwie specjalne umiejętnosci: widzenie w ciemności oraz super wytrzymałość";
+    public String opis(){
+    
+        return " widzenie w ciemności, super wytrzymałość";
 }
 
 
