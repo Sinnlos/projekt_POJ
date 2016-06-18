@@ -1,23 +1,24 @@
 package przebudzenie;
 
-public abstract class lowca extends profesja{
-	postac postac;
-	
-	public void Lowca(postac postac){
-		
-		this.postac = postac;
-	}
-	
-		public String getDescription(){
-		
-		return postac.getDescription() + ", Łowca";
-		
-		}
+public class Lowca extends Profesja{
+    Postac postac;
+    
+    public Lowca(Postac postac){
+        
+        this.postac = postac;
+        
+    }
+        
+        public String getDescription() {
+    
+        return postac.getDescription() +  ", Łowca ";
+        
+        }
 
-	
-	public String opis(){
-		return "posiada dwie specjalne umiejętnosci: skradanie oraz strzelectwo" + postac.opis();
-		}
+    
+    public String opis(){
+        return " skradanie, strzelectwo"+ postac.opis();
+        }
 
 
 }
