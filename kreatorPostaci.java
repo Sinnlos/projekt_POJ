@@ -327,7 +327,9 @@ public static void main(String args [])
             try {
                 zapis = new PrintWriter(imiePostaci + ".txt");
                 zapis.println("Nazwa: " + imiePostaci);
-                zapis.println(postac.getDescription() + postac.opis());
+                zapis.println("Rasa: " + postac.getRasa());
+                zapis.println("Profesja: " + postac.getProfesja());
+                zapis.println("Umiejetnosci: " + postac.getZdolnosc() + postac.getUmiejetnosc());
                 zapis.close();
                 JOptionPane.showMessageDialog(null, "Postać została utworzona.");
                 } 
@@ -338,4 +340,3 @@ public static void main(String args [])
 		   
            
 	}}}
-
