@@ -1,6 +1,6 @@
 package przebudzenie;
 
-public class Lowca extends Profesja{
+public class Lowca extends Dekorator{
     Postac postac;
     
     public Lowca(Postac postac){
@@ -9,16 +9,32 @@ public class Lowca extends Profesja{
         
     }
         
-        public String getDescription() {
-    
-        return postac.getDescription() +  ", Łowca ";
+    public String getRasa() {
         
+        return postac.getRasa();
+        
+    }
+
+    public String getZdolnosc() {
+        return postac.getZdolnosc();
+    }
+
+    public String getProfesja() {
+        if (postac.getProfesja() == "") {
+            return postac.getProfesja() + "Łowca";
         }
+        else
+        return postac.getProfesja() + ", łowca";
+    }      
 
-    
-    public String opis(){
-        return " skradanie, strzelectwo"+ postac.opis();
+    public String getUmiejetnosc() {
+        if (postac.getUmiejetnosc() == "") {
+            return postac.getUmiejetnosc() + "Skradanie, strzelectwo";
         }
+        else
+        return postac.getUmiejetnosc() + ", skradnie, strzelectwo.";
+    }
+
+    }
 
 
-}
