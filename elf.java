@@ -4,14 +4,10 @@ public class Elf extends Postac {
     
     public Elf(){
         
-        description = "Elf ";
+        rasa = "Elf ";
+        zdolnosc = " widzenie w ciemności, super zręczność";
         
         }
-    
-    public String opis(){
-        
-        return " widzenie w ciemności, super zręczność";
-    }
     
     
 }
