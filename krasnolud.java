@@ -4,15 +4,10 @@ public class Krasnolud extends Postac {
     
 public Krasnolud(){
         
-        description = "Krasnolud ";
+        rasa = "Krasnolud ";
+        zdolnosc = " widzenie w ciemności, super wytrzymałość";
         
         }
-    
-
-    public String opis(){
-    
-        return " widzenie w ciemności, super wytrzymałość";
-}
 
 
 }
