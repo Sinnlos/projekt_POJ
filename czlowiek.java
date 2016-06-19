@@ -4,15 +4,10 @@ public class Czlowiek extends Postac {
     
     public Czlowiek(){
         
-    description = "Człowiek ";
+    rasa = "Człowiek ";
+    zdolnosc = null;
     
     }
-    
-    public String opis(){
-        
-        return "";
-    
-    }
-    
+
 
 }
