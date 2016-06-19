@@ -2,12 +2,42 @@ package przebudzenie;
 
 public abstract class Postac {
     
-    String description = "Nieznany opis";
+    String rasa = "";
+    String profesja = "";
+    String zdolnosc = "";
+    String umiejetnosc = "";
     
-    public String getDescription(){
+    public String getRasa(){
         
-        return description;
+        return rasa;
     }
     
-    public abstract String opis();
+    public String getProfesja() {
+        
+        if (profesja != null) {
+            
+            return "";
+            
+        }
+        
+        else {
+            
+            return profesja;
+            
+        }
+        
+    }
+    
+    public String getZdolnosc() {
+
+        return zdolnosc;
+        
+    }
+    
+    public String getUmiejetnosc() {
+        
+
+        return umiejetnosc;
+        
+    }
 }
