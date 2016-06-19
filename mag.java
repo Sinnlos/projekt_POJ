@@ -1,6 +1,6 @@
 package przebudzenie;
 
-public class Mag extends Profesja {
+public class Mag extends Dekorator{
     Postac postac;
     
     public Mag(Postac postac){
@@ -8,16 +8,31 @@ public class Mag extends Profesja {
     this.postac = postac;
     }
     
-    public String getDescription() {
-
+    public String getRasa() {
         
-        return postac.getDescription() +  ", Mag ";
+        return postac.getRasa();
         
-        }       
+    }
     
-    public String opis(){
-        return " czarowanie, eliksiry"+ postac.opis();
+    public String getZdolnosc() {
+        return postac.getZdolnosc();
+    }
+    
+    public String getProfesja() {
+        if (postac.getProfesja() == "") {
+            return postac.getProfesja() + "Mag";
         }
-
+        else
+        return postac.getProfesja() + ", mag";
+    }      
+    
+    public String getUmiejetnosc() {
+        if (postac.getUmiejetnosc() == "") {
+            return postac.getUmiejetnosc() + "Czarowanie, eliksiry";
+        }
+        else
+        return postac.getUmiejetnosc() + ", czarowanie, eliksiry.";
+    }
 
 }
+
