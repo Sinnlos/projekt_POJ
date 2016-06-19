@@ -1,0 +1,10 @@
+package przebudzenie;
+
+public abstract class Dekorator extends Postac {
+    
+    public abstract String getRasa();
+    public abstract String getProfesja();
+    public abstract String getZdolnosc();
+    public abstract String getUmiejetnosc();
+
+}
