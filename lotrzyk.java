@@ -4,15 +4,10 @@ public class Lotrzyk extends Postac{
     
 public Lotrzyk(){
         
-        description = "Łotrzyk ";
+        rasa = "Łotrzyk ";
+        zdolnosc = " latanie, wrażliwość na obrażenia";
         
         }
 
-
-    public String opis(){
-    
-        return " latanie, wrażliwość na obrażenia";
 }
 
-
-}
